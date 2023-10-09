@@ -52,4 +52,7 @@
     .main__tiempo{
         width: 80%;
     } 
+    .main__tiempo-grados{
+        font-size: 50px;
+    }
 }
