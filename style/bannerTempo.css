@@ -55,4 +55,7 @@
     .main__tiempo-grados{
         font-size: 50px;
     }
+    .main__tiempo-icono{
+        width: 100px;
+    }
 }
