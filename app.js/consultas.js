@@ -7,12 +7,12 @@ export async function consultaCiudades (id){
 }
 
 export const listaCiudades = () =>{
-    return fetch('../data/paises.json').then(data => data.json())   
+    return fetch('./data/paises.json').then(data => data.json())   
    
 }
 
 export function recorerCiudades (){
-    fetch("../data/city.list.json").then (data => data.json())
+    fetch("./data/city.list.json").then (data => data.json())
 }
 
 consultaCiudades("2885688")
