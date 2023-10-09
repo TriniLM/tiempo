@@ -7,8 +7,8 @@ const busquedaPais = document.getElementById("busquedaPais");
 const listaResultado = document.getElementById("searchResultado");
 const contenTiempo = document.getElementById("Tiempo");
 
-const solisitud = await (await fetch("../data/city.list.json")).json()
-const paisIso = await (await fetch("../data/paises.json")).json()
+const solisitud = await (await fetch("https://raw.githubusercontent.com/TriniLM/tiempo/main/data/city.list.json")).json()
+const paisIso = await (await fetch("https://raw.githubusercontent.com/TriniLM/tiempo/main/data/paises.json")).json()
 
 
 // buscar el nombre del pais
