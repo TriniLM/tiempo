@@ -16,3 +16,10 @@
 .sensacion div p{
     margin-left:5px ;
 }
+
+
+@media screen and (max-width:375px) {
+    .sensacion{
+        width: 80%;
+    } 
+}
