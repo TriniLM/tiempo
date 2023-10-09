@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiempo</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/search.css">
+    <link rel="stylesheet" href="style/bannerTempo.css">
+    <link rel="stylesheet" href="style/ubicacion.css">
+    <link rel="stylesheet" href="style/sensacion.css">
+</head>
+<body>
+    <header></header>
+    <main role="main" class="main">
+        <div class="search">
+            <div class="search__paises " >
+                <input type="tex" placeholder="Selecciona tu pais" id="busquedaPais">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="search__resultado" id="searchResultado"></div>
+            </div>
+        </div>
+        <div id="ubicacion"></div>
+        <div class="main__tiempo">
+            <div class="main__tiempo-temperatura" id="Tiempo">
+            </div>
+        </div>
+        <div class="sensacion" id="sensacion">
+            <div>
+                <i class="fa-solid fa-droplet"></i>
+                <p></p>
+            </div>
+            <div>
+                <i class="fa-solid fa-wind"></i>
+                <p></p>
+            </div>
+        </div>
+    </main>
+   <!-- <script src="app.js/consultas.js" type="module"></script>
+    <script src="app.js/paises.js" type="module"></script>-->
+    <script src="app.js/busquedaPais.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/11a7ca8e38.js" crossorigin="anonymous"></script>
+</body>
+</html>

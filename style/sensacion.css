@@ -1,0 +1,18 @@
+.sensacion{
+    background-color: white;
+    display: flex;
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.sensacion div{
+    display: flex;
+    align-items: center;
+} 
+
+.sensacion div p{
+    margin-left:5px ;
+}
