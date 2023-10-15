@@ -21,7 +21,6 @@ location.innerHTML = zona
 }
 export async function mostrarTiempo(id, callback, parent){
     await  callback(id).then(ress => {
-        console.log(ress)
         let temp = ress.main.temp;
         let icon = ress.weather[0].icon;
         let name = ress.name;

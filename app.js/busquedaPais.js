@@ -76,9 +76,10 @@ document.addEventListener("click",(e)=>{
   navigator.geolocation.getCurrentPosition(correcto, error)
   function correcto(posicion){
     console.log(posicion)
-     let lat = posicion.coords.latitude.toFixed(2)
-     let long = posicion.coords.longitude.toFixed(2)
-     buscarLl(long, lat).then(datos =>{
+     let lat = posicion.coords.latitude
+     let long = posicion.coords.longitude
+     console.log(lat + " + " + long)
+     buscarLl(long , lat).then(datos =>{
       let temp = datos.main.temp;
       let icon = datos.weather[0].icon;
       let name = datos.name;
@@ -97,3 +98,19 @@ document.addEventListener("click",(e)=>{
     console.log(err)
   }
  }
+
+ const apiKey = '2f6c937e11b4496e9b7181754230610'; // Reemplaza 'TU_CLAVE_DE_API' con tu propia clave de API de OpenWeatherMap
+const longitude = -69.844992;
+const latitude = 18.5335808;
+
+const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${latitude},${longitude}`;
+
+fetch(apiUrl)
+  .then((response) => response.json())
+  .then((data) => {
+    // Aquí puedes trabajar con los datos de clima recibidos en 'data'
+    console.log(data);
+  })
+  .catch((error) => {
+    console.error('Error al obtener los datos del clima:', error);
+  });
