@@ -6,8 +6,7 @@ export function showLoader (){
 export function hidenLoader (){
     loader.style.display = "none";
 }
-showLoader()
 
-window.addEventListener("load", ()=>{
+document.addEventListener("load", ()=>{
   hidenLoader()
 })
