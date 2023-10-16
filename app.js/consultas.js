@@ -2,7 +2,7 @@ import { hidenLoader,showLoader } from "./loader.js";
 
 
 export async function consultaCiudades (id){
-    showLoader()
+   showLoader()
    const apiKey = "79783bc2a3e5cd9664167b0eeb578444";
  return  fetch(`https://api.openweathermap.org/data/2.5/weather?id=${id}&appid=${apiKey}&lang=es`)
     .then(ress => {

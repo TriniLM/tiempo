@@ -1,12 +1,15 @@
-const loader = document.querySelector(".loader-container");
+const loader = document.getElementById("cargando")
+
+export function hidenLoader (){
+  loader.style.display = "none";
+
+}
 
 export function showLoader (){
-    loader.style.display = "flex";
-}
-export function hidenLoader (){
-    loader.style.display = "none";
+  loader.style.display = "flex";
 }
 
-document.addEventListener("load", ()=>{
+console.log(loader)
+document.addEventListener("load", (e)=>{
   hidenLoader()
 })

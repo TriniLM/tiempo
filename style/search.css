@@ -33,7 +33,7 @@
     width: 100%;
     position: absolute;
     height: auto;
-    max-height: 170px;
+    max-height: 50px;
     overflow-y: scroll;
     top: 40px;
     visibility: visible;
