@@ -19,6 +19,7 @@
   animation: spin 0.5s linear infinite;
   opacity: 0;
   position: absolute;
+  
 }
 .loader-two{
   animation-duration: 1s;

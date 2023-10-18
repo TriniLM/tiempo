@@ -6,8 +6,8 @@ export async function consultaCiudades (id){
    const apiKey = "79783bc2a3e5cd9664167b0eeb578444";
  return  fetch(`https://api.openweathermap.org/data/2.5/weather?id=${id}&appid=${apiKey}&lang=es`)
     .then(ress => {
-     hidenLoader()
-     return   ress.json()
+        setTimeout(hidenLoader, 1000)
+        return   ress.json()
     })
     .catch(err => console.log(err))
 }

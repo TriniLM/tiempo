@@ -1,15 +1,15 @@
 const loader = document.getElementById("cargando")
 
 export function hidenLoader (){
-  loader.style.display = "none";
+  loader.style.visibility = "hidden";
 
 }
 
 export function showLoader (){
-  loader.style.display = "flex";
+  loader.style.visibility = "visible";
 }
 
 console.log(loader)
 document.addEventListener("load", (e)=>{
-  hidenLoader()
+  setTimeout(hidenLoader,3000)
 })
